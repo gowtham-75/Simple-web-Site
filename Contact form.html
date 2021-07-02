@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html><head>
+	<title>
+	 Contact Form
+	</title>
+	<style>
+	
+	form {border: 10px solid #adad85}
+
+	input[type=text], select, textarea {
+
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	}
+
+	input[type=submit] {
+	background-color: #4CAF50;
+	color: blue;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	background-color: #45a049;
+	}
+
+	.container {
+	border-radius: 5px;
+	padding: 16px;
+  	background-color: #ffffb3;
+  	width: 97%;
+	padding: 20px;
+	}
+	button {
+
+  background-color: #c61aff;
+  color: black;
+  padding: 16px 25px;
+  margin: 8px 0;
+  border: double;
+  cursor: pointer;
+  width: 20%;
+ 
+ 
+
+}
+   </style>
+
+</head>  
+<body>
+<font align = "center"><h2>CONTACT FORM</h2></font>
+<form>
+	<div class="container">
+	
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+     <label for="ph">PH-Number</label>
+    <input type="text" id="ph" name="ph" placeholder="Enter your mobile number..." required>
+
+
+    <label for="mail">Mail-ID</label>
+    <input type="text" id="mail" name="mail" placeholder="Enter your mail..." required>
+
+ <!--   <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">CHINA</option>
+      <option value="usa">USA</option>
+      <option value="usa">UK</option>
+      <option value="usa">JAPAN</option>
+    </select>  -->
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Enter your content.." required style="height:200px"></textarea>
+
+   <button onclick="myFunction()" type="submit">Submit</a></button>
+   <script>
+	function myFunction() {
+  	alert("Your responce has been submited..");
+	}
+</script>
+</form> 
+</div>
+</body>
+</html>
